@@ -14,7 +14,7 @@ body {
   font-weight: var(--font-weight-regular);
   line-height: 1.5;
   letter-spacing: 0;
-  color: var(--charcoal-grey);
+  color: var(--dark-slate-grey);
   background-color: var(--charcoal-grey);
 }
 
@@ -32,4 +32,11 @@ h1, h2, h3, h4, h5, h6 {
 input, button  {
   font: inherit;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  display: block;
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
