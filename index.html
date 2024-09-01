@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="stylesheets/index.css">
+  <script src="./scripts/signup.js" defer></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,9 +17,9 @@
 </head>
 <body>
   <main>
-    <article class="signup">
+    <article class="signup js-wrapper">
       <!-- Sign-up form start -->
-      <form action="javascript:void(0);" class="signup__form">
+      <form action="javascript:void(0);" class="signup__form js-form">
         <h1 class="form__header">Stay updated!</h1>
 
         <p class="form__list-header" id="list-header">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -30,27 +31,30 @@
     
         <div class="form__input-label-wrapper">
           <label class="form__input-label" for="email">Email address</label>
-          <span class="form__error-message" aria-hidden="true" aria-live="assertive" role="alert"></span>
+          <span class="form__error-message js-error-message" aria-hidden="true" aria-live="assertive" role="alert"></span>
         </div>
-        <input class="form__input" id="email" type="email" placeholder="email@company.com" required>
+        <input class="form__input" id="email" name="email" type="email" placeholder="email@company.com" required>
     
-        <button class="form__submit-button">
+        <button class="form__submit-button js-submit-button">
           <span>Subscribe to monthly newsletter</span>
         </button>
       </form>
       <!-- Sign-up form end -->
   
-      <div class="signup__decorative-images" aria-hidden="true">
+      <div class="signup__decorative-images js-decorative-images" aria-hidden="true">
         <img class="decorative-images__desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="" aria-hidden="true">
         <img class="decorative-images__mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="" aria-hidden="true">
       </div>
   
       <!-- Success message start -->
-      <div class="signup__success" aria-hidden="true">
+      <div class="signup__success js-success" aria-hidden="true">
+        <img class="success__icon" src="./assets/images/icon-success.svg" aria-hidden="true">
         <h2 class="success__header">Thanks for subscribing!</h2>
-        <p class="success__message">A confirmation email has been sent to ash@loremcompany.com. 
+        <p class="success__message">A confirmation email has been sent to <strong class="message__important js-message-email"></strong>. 
           Please open it and click the button inside to confirm your subscription.</p>
-        <button class="success__dismiss-button">Dismiss message</button>
+        <button class="success__dismiss-button js-dismiss-button">
+          <span>Dismiss message</span>
+        </button>
       </div>
       <!-- Success message end -->
     </article>
