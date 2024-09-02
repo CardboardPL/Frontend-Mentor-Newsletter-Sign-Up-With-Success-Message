@@ -219,6 +219,7 @@
     justify-content: space-between;
     max-width: 928px;
     padding: 24px;
+    border-radius: 32px;
     margin: 24px;
   }
 
