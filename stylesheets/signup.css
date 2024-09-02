@@ -92,9 +92,9 @@
 }
 
 .form__submit-button,
-.form__submit-button::before,
+.form__submit-button::after,
 .success__dismiss-button,
-.success__dismiss-button::before {
+.success__dismiss-button::after {
   transition: opacity 0.15s ease-in-out;
 }
 
@@ -109,7 +109,13 @@
   border: none;
   margin-top: 24px;
   cursor: pointer;
-  overflow: hidden;
+}
+
+.form__submit-button:hover,
+.form__submit-button:focus,
+.success__dismiss-button:hover,
+.success__dismiss-button:focus {
+  box-shadow: 0 8px 32px var(--tomato);
 }
 
 .form__submit-button:active,
@@ -117,8 +123,8 @@
   opacity: 0.85;
 }
 
-.form__submit-button::before,
-.success__dismiss-button::before {
+.form__submit-button::after,
+.success__dismiss-button::after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -126,13 +132,14 @@
   right: 0;
   content: '';
   background-color: var(--dark-slate-grey);
+  border-radius: inherit;
   z-index: 1;
 }
 
-.form__submit-button:hover::before,
-.form__submit-button:focus::before,
-.success__dismiss-button:hover::before,
-.success__dismiss-button:focus::before  {
+.form__submit-button:hover::after,
+.form__submit-button:focus::after,
+.success__dismiss-button:hover::after,
+.success__dismiss-button:focus::after  {
   opacity: 0;
 }
 
@@ -172,17 +179,22 @@
 }
 
 .signup__success.visible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: initial;
   z-index: 1;
   pointer-events: all;
   visibility: visible;
   width: 100%;
-  padding: 24px 40px 40px 40px;
+  min-height: 100vh;
+  padding: 24px 24px 40px 24px;
 }
 
 .success__icon {
   width: 64px;
-  margin-bottom: 45.5px;
+  margin-top: 125px;
+  margin-bottom: 39.5px;
 }
 
 .message__important {
@@ -237,6 +249,16 @@
     visibility: hidden;
     width: 0;
   }
+
+  .signup__success.visible {
+    justify-content: flex-start;
+    min-height: auto;
+    padding: 24px 40px 40px 40px;
+  }
+
+  .success__icon {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 900px) {
@@ -248,7 +270,6 @@
   .form__header,
   .success__header {
     font-size: 56px;
-    margin-top: -6px;
   }
 
   .form__list-item {
