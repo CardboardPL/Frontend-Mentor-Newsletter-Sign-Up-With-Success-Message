@@ -9,11 +9,6 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="stylesheets/index.css">
   <script src="./scripts/signup.js" defer></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <main>
@@ -48,10 +43,12 @@
   
       <!-- Success message start -->
       <div class="signup__success js-success" aria-hidden="true">
-        <img class="success__icon" src="./assets/images/icon-success.svg" aria-hidden="true">
-        <h2 class="success__header">Thanks for subscribing!</h2>
-        <p class="success__message">A confirmation email has been sent to <strong class="message__important js-message-email"></strong>. 
-          Please open it and click the button inside to confirm your subscription.</p>
+        <div>
+          <img class="success__icon" src="./assets/images/icon-success.svg" aria-hidden="true">
+          <h2 class="success__header">Thanks for subscribing!</h2>
+          <p class="success__message">A confirmation email has been sent to <strong class="message__important js-message-email"></strong>. 
+            Please open it and click the button inside to confirm your subscription.</p>
+        </div>
         <button class="success__dismiss-button js-dismiss-button">
           <span>Dismiss message</span>
         </button>
