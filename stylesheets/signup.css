@@ -15,7 +15,7 @@
 .signup__form {
   display: flex;
   flex-direction: column;
-  padding: 2.25rem 1.5rem 2.5rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 .form__header,
@@ -74,7 +74,9 @@
   border: 0.0625rem solid var(--grey);
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: border-color 0.15s ease-in-out;
+  transition: 
+    border-color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out;
   outline: none;
 }
 
@@ -229,8 +231,7 @@
 
   .signup__form {
     justify-content: center;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 1.5rem;
   }
 
   .signup__decorative-images {
