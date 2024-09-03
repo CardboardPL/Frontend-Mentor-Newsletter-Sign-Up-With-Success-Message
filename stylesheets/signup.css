@@ -1,29 +1,29 @@
 .signup {
   width: 100%;
-  max-width: 400px;
+  max-width: 25rem;
   display: flex;
   flex-direction: column-reverse;
   background-color: var(--white);
   overflow: hidden;
-  box-shadow: 0 0 16px var(--dark-slate-grey);
+  box-shadow: 0 0 1rem var(--dark-slate-grey);
 }
 
 .signup.success {
-  max-width: 504px;
+  max-width: 31.5rem;
 }
 
 .signup__form {
   display: flex;
   flex-direction: column;
-  padding: 36px 24px 40px 24px;
+  padding: 2.25rem 1.5rem 2.5rem 1.5rem;
 }
 
 .form__header,
 .success__header {
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1;
-  letter-spacing: -0.07692307692307693px;
-  margin-bottom: 24px;
+  letter-spacing: -0.004807692307692308rem;
+  margin-bottom: 1.5rem;
 }
 
 .form__list-header {
@@ -32,12 +32,12 @@
 
 .form__list {
   list-style-type: none;
-  margin: 24px 0 37px 0;
+  margin: 1.5rem 0 2.3125rem 0;
 }
 
 .form__list-item {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .form__list-item:last-child {
@@ -47,21 +47,21 @@
 .form__list-item::before {
   display: block;
   position: relative;
-  top: 1px;
+  top: 0.0625rem;
   content: url("../assets/images/icon-list.svg");
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 .form__list-item:last-of-type::before {
-  top: 2px;
+  top: 0.125rem;
 }
 
 .form__input-label-wrapper {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: var(--font-weight-bold);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .form__error-message {
@@ -69,10 +69,10 @@
 }
 
 .form__input {
-  height: 56px;
-  padding: 0 23px;
-  border: 1px solid var(--grey);
-  border-radius: 8px;
+  height: 3.5rem;
+  padding: 0 1.4375rem;
+  border: 0.0625rem solid var(--grey);
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: border-color 0.15s ease-in-out;
   outline: none;
@@ -104,10 +104,10 @@
   font-weight: var(--font-weight-bold);
   color: var(--white);
   background: linear-gradient(90deg, #ff5379, var(--tomato), #f58f46);
-  border-radius: 8px;
-  height: 56px;
+  border-radius: 0.5rem;
+  height: 3.5rem;
   border: none;
-  margin-top: 24px;
+  margin-top: 1.5rem;
   cursor: pointer;
 }
 
@@ -115,7 +115,7 @@
 .form__submit-button:focus,
 .success__dismiss-button:hover,
 .success__dismiss-button:focus {
-  box-shadow: 0 8px 32px var(--tomato);
+  box-shadow: 0 0.5rem 2rem var(--tomato);
 }
 
 .form__submit-button:active,
@@ -146,7 +146,7 @@
 .form__submit-button > *,
 .success__dismiss-button > * {
   position: relative;
-  top: 1px;
+  top: 0.0625rem;
   z-index: 2;
 }
 
@@ -188,13 +188,13 @@
   visibility: visible;
   width: 100%;
   min-height: 100vh;
-  padding: 24px 24px 40px 24px;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
 }
 
 .success__icon {
-  width: 64px;
-  margin-top: 125px;
-  margin-bottom: 39.5px;
+  width: 4rem;
+  margin-top: 7.8125rem;
+  margin-bottom: 2.46875rem;
 }
 
 .message__important {
@@ -202,25 +202,25 @@
 }
 
 .success__dismiss-button {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 @media (min-width: 400px) {
   .signup {
-    border-radius: 16px;
+    border-radius: 1rem;
   }
 }
 
 @media (min-width: 850px) {
   .signup {
     position: relative;
-    top: -1px;
+    top: -0.0625rem;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 928px;
-    padding: 24px;
-    border-radius: 32px;
-    margin: 24px;
+    max-width: 58rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    margin: 1.5rem;
   }
 
   .signup.success {
@@ -234,7 +234,7 @@
   }
 
   .signup__decorative-images {
-    max-width: 400px;
+    max-width: 25rem;
   }
 
   .decorative-images__desktop {
@@ -254,7 +254,7 @@
   .signup__success.visible {
     justify-content: flex-start;
     min-height: auto;
-    padding: 24px 40px 40px 40px;
+    padding: 1.5rem 2.5rem 2.5rem 2.5rem;
   }
 
   .success__icon {
@@ -264,16 +264,16 @@
 
 @media (min-width: 900px) {
   .signup__form {
-    padding-left: 40px;
-    padding-right: 64px;
+    padding-left: 2.5rem;
+    padding-right: 4rem;
   }
 
   .form__header,
   .success__header {
-    font-size: 56px;
+    font-size: 3.5rem;
   }
 
   .form__list-item {
-    margin-bottom: 6.5px;
+    margin-bottom: 0.40625rem;
   }
 }
